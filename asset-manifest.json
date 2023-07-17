@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Charlie-Token/static/css/main.8cfe5161.css",
-    "main.js": "/Charlie-Token/static/js/main.09343a33.js",
+    "main.css": "/Charlie-Token/static/css/main.413d135e.css",
+    "main.js": "/Charlie-Token/static/js/main.9824b5d6.js",
     "static/js/787.adbb4811.chunk.js": "/Charlie-Token/static/js/787.adbb4811.chunk.js",
     "static/media/about_desktop_top.jpg": "/Charlie-Token/static/media/about_desktop_top.a5825692c974aa35079d.jpg",
     "static/media/roadmap_desktop_top.jpg": "/Charlie-Token/static/media/roadmap_desktop_top.2e14f9c24614ae7927c0.jpg",
@@ -16,12 +16,12 @@
     "static/media/about_right_1.png": "/Charlie-Token/static/media/about_right_1.4da1a2258aa27173dbd1.png",
     "static/media/buy_2.jpg": "/Charlie-Token/static/media/buy_2.aecf20ea395def23af0c.jpg",
     "index.html": "/Charlie-Token/index.html",
-    "main.8cfe5161.css.map": "/Charlie-Token/static/css/main.8cfe5161.css.map",
-    "main.09343a33.js.map": "/Charlie-Token/static/js/main.09343a33.js.map",
+    "main.413d135e.css.map": "/Charlie-Token/static/css/main.413d135e.css.map",
+    "main.9824b5d6.js.map": "/Charlie-Token/static/js/main.9824b5d6.js.map",
     "787.adbb4811.chunk.js.map": "/Charlie-Token/static/js/787.adbb4811.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8cfe5161.css",
-    "static/js/main.09343a33.js"
+    "static/css/main.413d135e.css",
+    "static/js/main.9824b5d6.js"
   ]
 }
