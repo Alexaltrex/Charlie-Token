@@ -1,0 +1,27 @@
+@import "../../../assets/styles/app";
+
+.animatedText {
+  position: absolute;
+  z-index: 3;
+  width: 134px;
+  height: 55px;
+  top: 400px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  @include desktop {
+    top: 350px;
+  }
+
+  .text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    @include Redaction;
+    color: rgb(3, 3, 3);
+    font-size: 42px;
+    line-height: 130%;
+    opacity: 0;
+  }
+
+}

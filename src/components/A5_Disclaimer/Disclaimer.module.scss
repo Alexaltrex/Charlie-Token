@@ -1,0 +1,62 @@
+@import "../../assets/styles/app";
+
+.disclaimer {
+  background: rgba(0,0,0,0.1);
+  height: 100vh;
+  width: 100vw;
+  box-sizing: border-box;
+  backdrop-filter: blur(10px);
+
+
+  .card {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background: #000;
+    width: calc(100vw - 48px);
+    border-right: 2px solid #282828;
+    box-sizing: border-box;
+
+    &:focus-visible {
+      outline: none;
+    }
+
+    .closeBtn {
+      @include button;
+      @include centerRow;
+      position: absolute;
+      width: 25px;
+      height: 25px;
+      top: 20px;
+      right: 20px;
+      border: 1px solid var(--button-line, #40403E);
+      background: var(--button, #282828);
+      box-shadow: -2px 2px 0px 0px #000 inset;
+
+      span {
+        @include Redaction;
+        color: #F7F8F8;
+        font-size: 16px;
+        line-height: 130%;
+      }
+    }
+
+    .label {
+      @include Redaction;
+      color: #F7F8F8;
+      font-size: 28px;
+      line-height: 130%;
+    }
+
+    .text {
+      color: #F7F8F8;
+      font-size: 16px;
+      line-height: 120%;
+      letter-spacing: -0.32px;
+      margin-top: 20px;
+    }
+
+  }
+}

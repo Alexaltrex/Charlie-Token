@@ -1,0 +1,112 @@
+@import "../../assets/styles/app";
+
+.footer {
+  background: #F0F1EC;
+  padding: 34px 24px 40px;
+
+  @include desktop {
+    padding: 38px 0 24px;
+  }
+
+  .inner {
+
+    @include desktop {
+      width: 1168px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .topBlock {
+
+      @include desktop {
+        display: grid;
+        align-items: flex-start;
+        grid-template-columns: 1fr 1fr 2fr;
+      }
+
+      &_logo {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .logo, .logo > svg {
+          width: 139.62px;
+          height: 31px;
+        }
+
+        .socialIcons, {
+          @include onlyMobile()
+        }
+      }
+
+      &_links {
+        @include onlyDesktop();
+
+        .link {
+          display: block;
+          text-decoration: none;
+          color: #030303;
+          font-size: 14px;
+          line-height: 130%;
+
+          &:not(:first-child) {
+            margin-top: 15px;
+          }
+        }
+
+      }
+
+      &_text {
+        display: flex;
+        flex-direction: column;
+        margin-top: 35px;
+
+        @include desktop {
+          margin-top: 0;
+        }
+
+        .text {
+          color: #030303;
+          font-size: 12px;
+          line-height: 120%;
+          letter-spacing: -0.24px;
+        }
+
+        .socialIcons {
+          @include onlyDesktop(flex);
+          margin-top: 36px;
+          align-self: flex-end;
+        }
+      }
+
+    }
+
+    .bottomBlock {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 40px;
+
+      @include desktop {
+        justify-content: normal;
+      }
+
+      & > p {
+        color: #40403E;
+        font-size: 12px;
+        line-height: 120%;
+        letter-spacing: -0.24px;
+
+
+        &:nth-child(2) {
+          @include desktop {
+            margin-left: 30px;
+          }
+        }
+      }
+
+    }
+
+
+  }
+
+}

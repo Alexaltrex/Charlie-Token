@@ -1,0 +1,21 @@
+@import "../../../assets/styles/app";
+
+.socialLinks {
+  display: flex;
+
+  .link {
+    display: block;
+    width: 25px;
+    height: 25px;
+
+    &:nth-child(2) {
+      margin-left: 18px;
+    }
+
+    img {
+      display: block;
+      width: 25px;
+      height: 25px;
+    }
+  }
+}

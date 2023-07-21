@@ -1,0 +1,75 @@
+@import "../../assets/styles/app";
+
+.header {
+  padding: 24px 24px 0;
+
+  @include desktop {
+    padding: 19px 0px 0px;
+  }
+
+  .inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+
+    @include desktop {
+      width: 1173px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .logo, .logo svg {
+      width: 139.62px;
+      height: 31px;
+    }
+
+    .links {
+      @include onlyDesktop(flex);
+      @include absoluteCenter;
+
+      .link {
+        font-size: 14px;
+        line-height: 130%;
+        color: #F7F8F8;
+        text-decoration: none;
+        transition: 0.3s;
+
+        &:not(:first-child) {
+          margin-left: 30px;
+        }
+
+        &:hover {
+          color: #929292;
+        }
+
+      }
+
+    }
+
+    .buttons {
+      display: flex;
+      align-items: center;
+
+      .manifesto {
+        @include button;
+        @include onlyDesktop;
+        color: #F7F8F8;
+        font-size: 14px;
+        line-height: 130%;
+      }
+
+      .buyBtn {
+        @include onlyDesktop;
+        margin-left: 24px;
+        width: 130px;
+      }
+
+      .burgerBtn {
+        @include onlyMobile;
+        width: 82px;
+      }
+
+    }
+  }
+}

@@ -1,0 +1,77 @@
+@import "../../../assets/styles/app";
+
+.item {
+  position: relative;
+  background: $background_white;
+  cursor: pointer;
+
+  &:not(:first-child) {
+    margin-top: 6px;
+
+    @include desktop {
+      margin-top: 10px;
+    }
+  }
+
+  .top {
+    display: flex;
+    align-items: center;
+    height: 61px;
+    box-sizing: border-box;
+    padding-left: 20px;
+    padding-right: 56px;
+
+    @include desktop {
+      height: 69px;
+      padding-right: 65px;
+    }
+
+    .question {
+      @include Redaction;
+      color: #030303;
+      font-size: 16px;
+      line-height: 130%;
+
+      @include desktop {
+        font-size: 22px;
+      }
+    }
+  }
+
+  .answer {
+    padding: 0 20px 20px;
+    color: #030303;
+    font-size: 12px;
+    line-height: 130%;
+
+    @include desktop {
+      padding: 0 65px 20px 20px;
+      font-size: 16px;
+    }
+  }
+
+  .arrow {
+    position: absolute;
+    top: 25px;
+    right: 18px;
+    align-self: flex-start;
+    display: block;
+    width: 20px;
+    height: 12px;
+    transition: 0.3s;
+
+    @include desktop {
+      top: 28px;
+      right: 20px;
+      width: 25px;
+      height: 15px;
+    }
+  }
+
+  &_open {
+    .arrow {
+      transform: rotate(-180deg);
+    }
+  }
+
+}

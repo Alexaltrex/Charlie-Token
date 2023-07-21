@@ -1,0 +1,85 @@
+@import "../../assets/styles/app";
+
+.charlieToken {
+  overflow: hidden;
+  padding: 48px 24px 30px;
+
+  @include desktop {
+    padding: 80px 0 0px;
+  }
+
+  .inner {
+
+    //h1.title {
+    //  @include Redaction;
+    //  color: #F7F8F8;
+    //  text-align: center;
+    //  font-size: 96px;
+    //  line-height: 110%;
+    //
+    //  @include desktop {
+    //    font-size: 128px;
+    //  }
+    //}
+
+    .imgs {
+      position: relative;
+      z-index: 2;
+      display: flex;
+      justify-content: center;
+
+      @include desktop {
+        margin-bottom: -30px;
+      }
+
+      .img {
+        position: relative;
+        z-index: 2;
+        display: block;
+        height: 460px;
+        width: auto;
+
+        &:nth-child(1), &:nth-child(3) {
+         display: none;
+          //position: absolute;
+          //top: 20px;
+          opacity: 0.15;
+          transform: scale(0.8) translateY(-20%);
+        }
+
+        &:nth-child(2) {
+          margin: 0px -70px;
+        }
+
+        @include desktop {
+          height: 790px;
+        }
+      }
+    }
+
+    .buttons {
+      @include onlyMobile(flex);
+      position: relative;
+      z-index: 3;
+      flex-direction: column;
+      margin-top: -100px;
+
+      .buyBtn {
+        position: relative;
+        z-index: 3;
+      }
+
+
+      .manifesto {
+        position: relative;
+        z-index: 3;
+        @include button;
+        margin-top: 30px;
+        color: #F7F8F8;
+        font-size: 14px;
+        line-height: 130%;
+      }
+    }
+
+  }
+}

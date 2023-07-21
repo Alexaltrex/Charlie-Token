@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "iA Writer Quattro S Regular";
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "iA Writer Quattro S Regular";
+  font-weight: 400;
+  font-style: normal;
+  src: local("iA Writer Quattro S Regular"), url(./assets/fonts/iAWriterQuattroSRegular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Redaction 35";
+  font-weight: 400;
+  font-style: normal;
+  src: local("Redaction 35"), url(./assets/fonts/Redaction35.otf) format("truetype");
+}
+
+
